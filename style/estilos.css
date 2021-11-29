@@ -94,7 +94,7 @@ a {
 }
 .gDigital p {
     width: 80px;
-    height: 70px;
+    height: auto;
     background-color: rgba(245, 245, 220, 0.932);
     margin: auto;
     padding: 10% 10%;
@@ -183,6 +183,7 @@ a {
     justify-content: space-between;
     flex-wrap: wrap;
     background-color: cadetblue;
+    background-image: linear-gradient(to bottom, #205f5b, #b1d3d1);
 }
 .itemServicios {
     font-size: 1rem;
@@ -402,15 +403,41 @@ a {
 
 
 @media screen and (max-width:285px){
+.nombre h2 {
+    font-weight: 800;
+    font-size: 2rem;
+    /* = 20px */
+    text-align: center;
+    padding: 10px 0;
+    }
+.nombre p {
+    font-weight: 200;
+    font-size: 1.3rem;
+    /* = 20px */
+    padding: 0 10px;
+    }
+.gDigital {
+    background-image: url(../img/bg1_Bio.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 50px;
+    }
 .gDigital p{
     justify-content: center;
     display: flex;
-    width: 80px;
-    height: 70px;
-    background-color: rgba(245, 245, 220, 0.932);
-    margin: auto;
-    padding: 10% 10%;
+    }
+.gDigital a {
+   display: flex;
+   justify-content: center;
+ } 
+ .servicios h2 {
+    font-weight: 600;
+    font-size: 1.3rem;
+    color: #24a3a3;
+    padding: 5% 10%;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    }
 }
-}
-        
-    
