@@ -84,6 +84,23 @@ a {
     /* = 20px */
     padding: 0 10px;
 }
+.nombre {
+    /* width: 100px;
+    height: 100px; */
+    padding: 5%;
+    justify-content: center;
+    background: rgba(223, 222, 222, 0.363);
+    position: relative;
+    animation-name: nombre;
+    animation-duration: 3s;  
+    animation-delay: 1s;
+    animation-fill-mode: backwards;
+  }
+  
+@keyframes nombre {
+    from {bottom: -800px; background-color: rgba(102, 102, 102, 0.274);}
+    to {bottom: 3px;}
+  }
     /*Gestion Digital*/
 .gDigital {
     background-image: url(../img/bg1_Bio.jpg);
