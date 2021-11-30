@@ -1,35 +1,35 @@
 * {
-    margin:0;
-    padding:0;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
-    
+
 html {
     font-size: 62.5%;
 }
-    
+
 body {
-     font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
-    
+
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-   font-family: 'Open Sans', serif;
+    font-family: 'Open Sans', serif;
 }
-    
+
 a {
-   color: #1E3035;
+    color: #1E3035;
     text-decoration: none;
 }
-    
-.container {
+
+.containerPalta {
     flex-flow: column wrap;
 }
-    
+
 .header {
     background-color: #d8d7d6;
     border-bottom: solid 0.1px #646666;
@@ -38,29 +38,30 @@ a {
     justify-content: space-between;
     align-items: center;
 }
-    
+
 .header h1 {
     padding: 0 0.5%;
 }
-    
+
 .header nav ul {
     list-style-type: none;
 }
-    
+
 .header nav ul li {
     padding: 0px 10px;
     display: inline;
 }
-    
+
 .header nav ul li {
     padding: 0px 10px;
     display: inline;
 }
-    
+
 .header a:hover {
     color: rgb(65, 145, 96);
 }
-    /*nombre*/
+
+/*nombre*/
 .nombre {
     width: auto;
     height: 50%;
@@ -70,6 +71,7 @@ a {
     border-bottom: solid 1px hsl(192, 8%, 36%);
     margin-bottom: 50px;
 }
+
 .nombre h2 {
     font-weight: 400;
     font-size: 3rem;
@@ -84,24 +86,30 @@ a {
     /* = 20px */
     padding: 0 10px;
 }
+
 .nombre {
-    /* width: 100px;
-    height: 100px; */
     padding: 5%;
     justify-content: center;
-    background: rgba(223, 222, 222, 0.363);
+    background: rgba(223, 222, 222, 0.308);
     position: relative;
     animation-name: nombre;
-    animation-duration: 3s;  
+    animation-duration: 2s;
     animation-delay: 1s;
     animation-fill-mode: backwards;
-  }
-  
+}
+
 @keyframes nombre {
-    from {bottom: -800px; background-color: rgba(102, 102, 102, 0.274);}
-    to {bottom: 3px;}
-  }
-    /*Gestion Digital*/
+    from {
+        bottom: -800px;
+        background-color: rgba(102, 102, 102, 0);
+    }
+
+    to {
+        bottom: 3px;
+    }
+}
+
+/*Gestion Digital*/
 .gDigital {
     background-image: url(../img/bg1_Bio.jpg);
     background-repeat: no-repeat;
@@ -109,6 +117,7 @@ a {
     background-size: cover;
     padding: 100px;
 }
+
 .gDigital p {
     width: 80px;
     height: auto;
@@ -117,14 +126,16 @@ a {
     padding: 10% 10%;
     justify-content: center;
     display: flex;
-}    
+}
+
 .gDigital a {
-   font-weight: 400;
+    font-weight: 400;
     font-size: 2rem;
     /* = 20px */
     text-align: center;
     color: rgb(65, 145, 96);
-}    
+}
+
 .gDigitalDescripcion {
     /* width: 750px; */
     font-weight: 400;
@@ -134,17 +145,21 @@ a {
     line-height: 1.5;
     padding: 50px 50px;
 }
+
 .gDigitalDescripcion h2 {
     font-weight: 800;
     font-size: 2rem;
     color: #24a3a3;
     padding: 20px 0px;
 }
-    /* Diseño Web*/
+
+/* Diseño Web*/
 .dweb {
     background-color: beige;
-    padding: 0.5% 0.5% 7% 0.5%;
+    padding: 10% 30% 20% 30%;
+    width: 1350px;
 }
+
 .dweb h2 {
     display: flex;
     justify-content: center;
@@ -154,12 +169,23 @@ a {
     padding: 5% 0px;
     width: auto;
 }
-.dwebFlex{
+
+.dwebFlex {
     display: flex;
-    justify-content: space-between;
+    justify-content: stretch;
     flex-wrap: wrap;
 }
-.dwebItems{
+.cardWeb {
+    width: 18rem;
+    height: 10%;
+    text-align: center;
+}
+.card-h5{
+    padding: 20% 0%;
+}
+
+
+.dwebItems {
     display: flex;
     padding: 20px 20px;
     font-size: 1rem;
@@ -169,25 +195,29 @@ a {
     justify-content: center;
     flex-direction: column;
 }
-.dwebItems h6{
+
+.dwebItems h6 {
     font-size: small;
     display: flex;
     padding: 10% 20%;
     width: auto;
     justify-content: center;
 }
+
 .dwebItems p {
     padding: 2em 5em;
     display: flex;
     justify-content: center;
 }
-    /*Gestion de Redes*/
+
+/*Gestion de Redes*/
 .servicios {
     background-color: beige;
     padding: 0.5% 0.5% 7% 0.5%;
 }
+
 .servicios h2 {
-   font-weight: 800;
+    font-weight: 800;
     font-size: 2rem;
     color: #24a3a3;
     padding: 5% 30%;
@@ -195,13 +225,15 @@ a {
     display: flex;
     justify-content: center;
 }
+
 .serviciosFlex {
-    display:flex;
+    display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     background-color: cadetblue;
     background-image: linear-gradient(to bottom, #205f5b, #b1d3d1);
 }
+
 .itemServicios {
     font-size: 1rem;
     color: #131214;
@@ -213,6 +245,7 @@ a {
     display: flex;
     flex-direction: column;
 }
+
 .itemServicios h6 {
     font-size: small;
     display: flex;
@@ -220,47 +253,55 @@ a {
     width: auto;
     justify-content: center;
 }
-.itemServicios p{
+
+.itemServicios p {
     padding: 2em 5em;
     display: flex;
     justify-content: center;
 }
-    /* Footer - Grid*/
+
+/* Footer - Grid*/
 .footer {
     background-color: rgb(199, 199, 195);
     display: grid;
     grid-template-columns: 50% 50%;
     height: 250px;
-}    
+}
+
 .fderecha {
     display: grid;
 }
-.fderecha h1{
+
+.fderecha h1 {
     padding: 5% 5%;
     font-size: 2em;
 }
+
 .fizquierda {
     display: grid;
 }
-.fizquierda h3{
+
+.fizquierda h3 {
     padding: 5% 5%;
     font-size: 2em;
 }
-.fizquierda a{
+
+.fizquierda a {
     padding: 10px 0px;
-    
+
 }
+
 .fizquierdaRedes {
     display: grid;
     grid-template-columns: repeat(9, 0.5fr);
     justify-items: center;
     padding-top: 10px;
 }
-    
-    /* @media queries*/
-  
-    
-@media screen and (max-width:1261px){
+
+/* @media queries*/
+
+
+@media screen and (max-width:1261px) {
     .itemServicios {
         font-size: 1rem;
         color: #131214;
@@ -270,6 +311,7 @@ a {
         display: flex;
         flex-direction: column;
     }
+
     .itemServicios h6 {
         font-size: small;
         display: flex;
@@ -277,69 +319,84 @@ a {
         width: auto;
         justify-content: center;
     }
-    .itemServicios p{
-        padding:0;
+
+    .itemServicios p {
+        padding: 0;
         display: flex;
         justify-content: center;
     }
-.servicios h2 {
-    font-weight: 800;
-    font-size: 1.5rem;
-    color: #24a3a3;
-    padding: 5% 20%;
-    width: auto;
-    display: flex;
-    justify-content: center;
+
+    .servicios h2 {
+        font-weight: 800;
+        font-size: 1.5rem;
+        color: #24a3a3;
+        padding: 5% 20%;
+        width: auto;
+        display: flex;
+        justify-content: center;
     }
-.dwebFlex{
-    flex-direction: row;
-    justify-content: center; 
+
+    .dweb {
+        background-color: beige;
+        padding: 5% 10%;
+        width: auto;
     }
-.dwebItems{
-    font-size: 1rem;
-    color: #131214;
-    width: 25%;
-    height: 330px;
-    justify-content: center;
-    display: flex;
-    flex-direction: column;  
+
+    .dwebFlex {
+        flex-direction: row;
+        justify-content: center;
     }
-.dweb h6 {
-    font-size: 1.5rem;
-    padding: 0px;
-    width: auto;
-    display: flex;
-    justify-content: center;
+
+    .dwebItems {
+        font-size: 1rem;
+        color: #131214;
+        width: 25%;
+        height: 330px;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
     }
-.dweb p{
-    width: auto;
-    padding: 0%;
+
+    .dweb h2 {
+        font-size: 1.5rem;
+        padding: 0px;
+        width: auto;
+        display: flex;
+        justify-content: center;
+    }
+
+    .dweb p {
+        width: auto;
+        padding: 0%;
     }
 }
 
 
-@media screen and (max-width:800px){
+@media screen and (max-width:800px) {
     .container {
         flex-direction: column;
         flex-flow: row wrap;
-        }
-    .header{
+    }
+
+    .header {
         flex-direction: column;
         height: auto;
         justify-content: space-around;
-        }
-       
-    .serviciosFlex{
+    }
+
+    .serviciosFlex {
         flex-direction: row;
         justify-content: center;
-        }
+    }
+
     .serviciosFlex {
         flex-direction: column;
         flex-flow: row wrap;
         background-color: antiquewhite;
         width: auto;
         padding: auto;
-        }
+    }
+
     .servicios h2 {
         font-weight: 800;
         font-size: 1.5rem;
@@ -348,7 +405,8 @@ a {
         width: auto;
         display: flex;
         justify-content: center;
-        }
+    }
+
     .gDigital p {
         width: auto;
         height: auto;
@@ -356,105 +414,121 @@ a {
         margin: auto;
         justify-content: center;
         display: flex;
-        }
-.gDigital a {
-    font-weight: 400;
-    font-size: 1.5rem;
-    /* = 20px */
-    text-align: center;
-    color: rgb(65, 145, 96);
-}
-.itemServicios {
-    font-size: 1rem;
-    width:auto;
-    height: auto;
-    justify-content: center;
-    border: solid 1px black;
-    display: flex;
-    flex-direction: column;
-}
-.dweb{
-    flex-direction: column;
     }
-.dwebItems{
-    font-size: 1rem;
-    color: #131214;
-    width:auto;
-    height: 200px;
-    justify-content: center;
-    display: flex;
-    flex-direction: column;  
+
+    .gDigital a {
+        font-weight: 400;
+        font-size: 1.5rem;
+        /* = 20px */
+        text-align: center;
+        color: rgb(65, 145, 96);
     }
-.dweb h6 {
-    font-size: 1.5rem;
-    /*padding: 5% 10%;*/
-    width: auto;
-    display: flex;
-    justify-content: center;
+
+    .itemServicios {
+        font-size: 1rem;
+        width: auto;
+        height: auto;
+        justify-content: center;
+        border: solid 1px black;
+        display: flex;
+        flex-direction: column;
     }
-.dweb p{
-    width: auto;
+
+    .dweb {
+        background-color: beige;
+        padding: 30% 5% 40% 5%;
+        width: auto;
     }
-.footer h1 h3{
-    font-size: 10px;
+
+    /* .dwebItems {
+        font-size: 1rem;
+        color: #131214;
+        width: auto;
+        height: 200px;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+    } */
+
+    .dweb h2 {
+        font-size: 1.5rem;
+        width: auto;
+        display: flex;
+        justify-content: center;
     }
-.fderecha {
-    flex-direction: row;
-    height: auto;
-    justify-content: space-around;
-    flex-flow: row wrap;
-}
-.fizquierda{
-    flex-direction: row;
-    height: auto;
-    justify-content: space-around;
-    flex-flow: row wrap;
+
+   /*  .dweb p {
+        width: auto;
     }
-.footer {
-    background-color: rgb(199, 199, 195);
-    display: grid;
-    grid-template-columns: 50% 50%;
-    height: 250px;
-    } 
+ */
+    .footer h1 h3 {
+        font-size: 10px;
+    }
+
+    .fderecha {
+        flex-direction: row;
+        height: auto;
+        justify-content: space-around;
+        flex-flow: row wrap;
+    }
+
+    .fizquierda {
+        flex-direction: row;
+        height: auto;
+        justify-content: space-around;
+        flex-flow: row wrap;
+    }
+
+    .footer {
+        background-color: rgb(199, 199, 195);
+        display: grid;
+        grid-template-columns: 50% 50%;
+        height: 300px;
+    }
 }
 
 
-@media screen and (max-width:285px){
-.nombre h2 {
-    font-weight: 800;
-    font-size: 2rem;
-    /* = 20px */
-    text-align: center;
-    padding: 10px 0;
+@media screen and (max-width:285px) {
+    .nombre h2 {
+        font-weight: 800;
+        font-size: 2rem;
+        /* = 20px */
+        text-align: center;
+        padding: 10px 0;
     }
-.nombre p {
-    font-weight: 200;
-    font-size: 1.3rem;
-    /* = 20px */
-    padding: 0 10px;
+
+    .nombre p {
+        font-weight: 200;
+        font-size: 1.3rem;
+        /* = 20px */
+        padding: 0 10px;
     }
-.gDigital {
-    background-image: url(../img/bg1_Bio.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    padding: 50px;
+
+    .gDigital {
+        background-image: url(../img/bg1_Bio.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        padding: 50px;
     }
-.gDigital p{
-    justify-content: center;
-    display: flex;
+
+    .gDigital p {
+        justify-content: center;
+        display: flex;
     }
-.gDigital a {
-   display: flex;
-   justify-content: center;
- } 
- .servicios h2 {
-    font-weight: 600;
-    font-size: 1.3rem;
-    color: #24a3a3;
-    padding: 5% 10%;
-    width: auto;
-    display: flex;
-    justify-content: center;
+
+    .gDigital a {
+        display: flex;
+        justify-content: center;
+    }
+
+    .servicios h2 {
+        font-weight: 600;
+        font-size: 1.3rem;
+        color: #24a3a3;
+        padding: 5% 10%;
+        width: auto;
+        display: flex;
+        justify-content: center;
     }
 }
