@@ -156,8 +156,9 @@ a {
 /* Diseño Web*/
 .dweb {
     background-color: beige;
-    padding: 10% 30% 20% 30%;
-    width: 1350px;
+    justify-content: center;
+    display: grid;
+    height: 500px;
 }
 
 .dweb h2 {
@@ -174,6 +175,8 @@ a {
     display: flex;
     justify-content: stretch;
     flex-wrap: wrap;
+    width: auto;
+    height: 300px;
 }
 .cardWeb {
     width: 18rem;
@@ -184,31 +187,6 @@ a {
     padding: 20% 0%;
 }
 
-
-.dwebItems {
-    display: flex;
-    padding: 20px 20px;
-    font-size: 1rem;
-    color: #131214;
-    width: 30%;
-    height: 300px;
-    justify-content: center;
-    flex-direction: column;
-}
-
-.dwebItems h6 {
-    font-size: small;
-    display: flex;
-    padding: 10% 20%;
-    width: auto;
-    justify-content: center;
-}
-
-.dwebItems p {
-    padding: 2em 5em;
-    display: flex;
-    justify-content: center;
-}
 
 /*Gestion de Redes*/
 .servicios {
@@ -263,43 +241,24 @@ a {
 /* Footer - Grid*/
 .footer {
     background-color: rgb(199, 199, 195);
-    display: grid;
+    display: -moz-grid-line;
     grid-template-columns: 50% 50%;
-    height: 250px;
+    padding: 10px 10px;
 }
-
-.fderecha {
-    display: grid;
+.footer h1{
+    font-weight: 400;
+    font-size: 2rem;
+    padding: 20px 0px;
+    margin: 0;
 }
-
-.fderecha h1 {
-    padding: 5% 5%;
-    font-size: 2em;
-}
-
-.fizquierda {
-    display: grid;
-}
-
-.fizquierda h3 {
-    padding: 5% 5%;
-    font-size: 2em;
-}
-
-.fizquierda a {
-    padding: 10px 0px;
-
-}
-
-.fizquierdaRedes {
-    display: grid;
-    grid-template-columns: repeat(9, 0.5fr);
-    justify-items: center;
-    padding-top: 10px;
+.footer h3{
+    font-weight: 400;
+    font-size: 2rem;
+    padding: 20px 0px;
+    margin: 0;
 }
 
 /* @media queries*/
-
 
 @media screen and (max-width:1261px) {
     .itemServicios {
@@ -345,16 +304,6 @@ a {
     .dwebFlex {
         flex-direction: row;
         justify-content: center;
-    }
-
-    .dwebItems {
-        font-size: 1rem;
-        color: #131214;
-        width: 25%;
-        height: 330px;
-        justify-content: center;
-        display: flex;
-        flex-direction: column;
     }
 
     .dweb h2 {
@@ -433,57 +382,23 @@ a {
         display: flex;
         flex-direction: column;
     }
-
     .dweb {
         background-color: beige;
-        padding: 30% 5% 40% 5%;
         width: auto;
     }
-
-    /* .dwebItems {
-        font-size: 1rem;
-        color: #131214;
-        width: auto;
-        height: 200px;
-        justify-content: center;
-        display: flex;
-        flex-direction: column;
-    } */
-
     .dweb h2 {
         font-size: 1.5rem;
         width: auto;
         display: flex;
         justify-content: center;
     }
-
-   /*  .dweb p {
+    .dweb {
+        background-color: beige;
         width: auto;
-    }
- */
+        height: 500px;
+    } 
     .footer h1 h3 {
         font-size: 10px;
-    }
-
-    .fderecha {
-        flex-direction: row;
-        height: auto;
-        justify-content: space-around;
-        flex-flow: row wrap;
-    }
-
-    .fizquierda {
-        flex-direction: row;
-        height: auto;
-        justify-content: space-around;
-        flex-flow: row wrap;
-    }
-
-    .footer {
-        background-color: rgb(199, 199, 195);
-        display: grid;
-        grid-template-columns: 50% 50%;
-        height: 300px;
     }
 }
 
@@ -530,5 +445,11 @@ a {
         width: auto;
         display: flex;
         justify-content: center;
+    }
+    .dwebFlex {
+        display: flex;
+        justify-content: stretch;
+        flex-wrap: wrap;
+        width: auto;
     }
 }
