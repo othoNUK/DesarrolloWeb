@@ -137,13 +137,14 @@ a {
 }
 
 .gDigitalDescripcion {
-    /* width: 750px; */
     font-weight: 400;
     font-size: 1.5rem;
-    /* = 20px */
     text-align: left;
     line-height: 1.5;
-    padding: 50px 50px;
+    padding: 50px 100px 50px 200px;
+    display: grid;
+    justify-content: space-evenly;
+    width: 80%;
 }
 
 .gDigitalDescripcion h2 {
@@ -206,10 +207,9 @@ a {
 
 .serviciosFlex {
     display: flex;
-    justify-content: space-between;
+    justify-content: center; /*cambie el valor*/
     flex-wrap: wrap;
-    background-color: cadetblue;
-    background-image: linear-gradient(to bottom, #205f5b, #b1d3d1);
+    
 }
 
 .itemServicios {
@@ -218,24 +218,29 @@ a {
     width: 30%;
     height: 300px;
     justify-content: center;
-    border: solid 1px black;
+    
     padding: 20px 20px;
     display: flex;
     flex-direction: column;
 }
 
 .itemServicios h6 {
-    font-size: small;
+    font-weight: 800;
+    font-size: 2.2rem;
+    color: #24a3a3;
     display: flex;
-    padding: 10% 20%;
+    padding: 5% 20%;
     width: auto;
     justify-content: center;
 }
 
 .itemServicios p {
-    padding: 2em 5em;
+    font-size: 1.2rem;
+    padding: 2em 4em;
     display: flex;
+    color: #505E62;
     justify-content: center;
+    text-align: center;
 }
 
 /* Footer - Grid*/
@@ -261,6 +266,9 @@ a {
 /* @media queries*/
 
 @media screen and (max-width:1261px) {
+    .gDigitalDescripcion{
+        padding: auto;
+    }
     .itemServicios {
         font-size: 1rem;
         color: #131214;
@@ -355,7 +363,10 @@ a {
         display: flex;
         justify-content: center;
     }
-
+    .gDigitalDescripcion{
+        padding: 20%;
+        width: auto;
+    }
     .gDigital p {
         width: auto;
         height: auto;
@@ -418,7 +429,10 @@ a {
         /* = 20px */
         padding: 0 10px;
     }
-
+    .gDigitalDescripcion {
+        padding: 10% 10%;
+        width: auto;
+    }
     .gDigital {
         background-image: url(../img/bg1_Bio.jpg);
         background-repeat: no-repeat;
