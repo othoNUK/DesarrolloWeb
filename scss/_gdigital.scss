@@ -1,0 +1,39 @@
+.gDigital {
+    background-image: url(../img/bg1_Bio.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 100px;
+    p {
+        width: 80px;
+        height: auto;
+        background-color: rgba(245, 245, 220, 0.932);
+        margin: auto;
+        padding: 10% 10%;
+        justify-content: center;
+        display: flex;
+    }
+    a {
+        font-weight: 400;
+        font-size: 2rem;
+        text-align: center;
+        color: rgb(65, 145, 96);
+    }   
+    .gDigitalDescripcion{
+        font-weight: 400;
+        font-size: 1.5rem;
+        text-align: left;
+        line-height: 1.5;
+        padding: 50px 100px 50px 200px;
+        display: grid;
+        justify-content: space-evenly;
+        width: 80%;
+        h2 {
+            font-weight: 800;
+            font-size: 2rem;
+            color: #24a3a3;
+            padding: 20px 0px;
+        }
+    }
+    
+}

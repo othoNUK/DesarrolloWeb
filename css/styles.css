@@ -1,0 +1,344 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  font-family: 'Roboto', sans-serif; }
+  body h1,
+  body h2,
+  body h3,
+  body h4,
+  body h5,
+  body h6 {
+    font-family: 'Open Sans', serif; }
+  body a {
+    color: #1E3035;
+    text-decoration: none; }
+
+.header {
+  background-color: #d8d7d6;
+  border-bottom: solid 0.1px #646666;
+  display: flex;
+  padding: 0.9% 0.5%;
+  justify-content: space-between;
+  align-items: center; }
+  .header h1 {
+    padding: 0 0.5%; }
+  .header nav ul {
+    list-style-type: none;
+    font-size: 14px; }
+    .header nav ul li {
+      padding: 0px 10px;
+      display: inline; }
+    .header nav ul a {
+      color: #419160; }
+    .header nav ul:hover {
+      color: #419160; }
+
+.nombre {
+  width: auto;
+  height: 50%;
+  text-align: center;
+  /*background-color: blueviolet;*/
+  padding: 5%;
+  border-bottom: solid 1px #546063;
+  margin-bottom: 50px; }
+  .nombre h2 {
+    font-weight: 400;
+    font-size: 3rem;
+    /* = 20px */
+    text-align: center;
+    padding: 10px 0;
+    margin: 0; }
+  .nombre p {
+    font-weight: 300;
+    font-size: 1.5rem;
+    padding: 0 10px; }
+
+.nombre {
+  padding: 5%;
+  justify-content: center;
+  background: rgba(223, 222, 222, 0.308);
+  position: relative;
+  animation-name: nombre;
+  animation-duration: 1s;
+  animation-delay: 0.5s;
+  animation-fill-mode: backwards; }
+
+@keyframes nombre {
+  from {
+    bottom: -300px;
+    background-color: rgba(102, 102, 102, 0); }
+  to {
+    bottom: 3px; } }
+
+.servicios {
+  background-color: beige;
+  padding: 0.5% 0.5% 7% 0.5%; }
+  .servicios h2 {
+    font-weight: 800;
+    font-size: 2rem;
+    color: #24a3a3;
+    padding: 5% 30%;
+    width: auto;
+    display: flex;
+    justify-content: center; }
+  .servicios .serviciosFlex {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; }
+  .servicios .itemServicios {
+    font-size: 1rem;
+    color: #131214;
+    width: 30%;
+    height: 300px;
+    justify-content: center;
+    padding: 20px 20px;
+    display: flex;
+    flex-direction: column; }
+  .servicios p {
+    font-size: 1.2rem;
+    padding: 2em 4em;
+    display: flex;
+    color: #505E62;
+    justify-content: center;
+    text-align: center; }
+  .servicios h6 {
+    font-weight: 800;
+    font-size: 2.2rem;
+    color: #24a3a3;
+    display: flex;
+    padding: 5% 20%;
+    width: auto;
+    justify-content: center; }
+
+.gDigital {
+  background-image: url(../img/bg1_Bio.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 100px; }
+  .gDigital p {
+    width: 80px;
+    height: auto;
+    background-color: rgba(245, 245, 220, 0.932);
+    margin: auto;
+    padding: 10% 10%;
+    justify-content: center;
+    display: flex; }
+  .gDigital a {
+    font-weight: 400;
+    font-size: 2rem;
+    text-align: center;
+    color: #419160; }
+  .gDigital .gDigitalDescripcion {
+    font-weight: 400;
+    font-size: 1.5rem;
+    text-align: left;
+    line-height: 1.5;
+    padding: 50px 100px 50px 200px;
+    display: grid;
+    justify-content: space-evenly;
+    width: 80%; }
+    .gDigital .gDigitalDescripcion h2 {
+      font-weight: 800;
+      font-size: 2rem;
+      color: #24a3a3;
+      padding: 20px 0px; }
+
+.dweb {
+  background-color: beige;
+  justify-content: center;
+  display: grid;
+  height: 500px; }
+  .dweb h2 {
+    display: flex;
+    justify-content: center;
+    font-weight: 800;
+    font-size: 2rem;
+    color: #24a3a3;
+    padding: 5% 0px;
+    width: auto; }
+  .dweb .dwebFlex {
+    display: flex;
+    justify-content: stretch;
+    flex-wrap: wrap;
+    width: auto;
+    height: 300px; }
+  .dweb .cardweb {
+    width: 18rem;
+    height: 10%;
+    text-align: center; }
+    .dweb .cardweb h5 {
+      padding: 20% 0%; }
+
+.footer {
+  background-color: #c7c7c3;
+  display: -moz-grid-line;
+  grid-template-columns: 50% 50%;
+  padding: 10px 10px; }
+  .footer h1 {
+    font-weight: 400;
+    font-size: 2rem;
+    padding: 20px 0px;
+    margin: 0; }
+  .footer h3 {
+    font-weight: 400;
+    font-size: 2rem;
+    padding: 20px 0px;
+    margin: 0; }
+  .footer i {
+    color: #616363;
+    font-size: 15px;
+    width: 50px; }
+
+@media screen and (max-width: 1261px) {
+  .gDigitalDescripcion {
+    padding: auto; }
+  .itemServicios {
+    font-size: 1rem;
+    color: #131214;
+    width: 25%;
+    height: 200px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column; }
+    .itemServicios p {
+      padding: 0;
+      display: flex;
+      justify-content: center; }
+    .itemServicios h6 {
+      font-size: small;
+      display: flex;
+      padding: 10% 20%;
+      width: auto;
+      justify-content: center; }
+  .servicios h2 {
+    font-weight: 800;
+    font-size: 1.5rem;
+    color: #24a3a3;
+    padding: 5% 20%;
+    width: auto;
+    display: flex;
+    justify-content: center; }
+  .dweb {
+    background-color: beige;
+    padding: 5% 10%;
+    width: auto; }
+    .dweb h2 {
+      font-size: 1.5rem;
+      padding: 0px;
+      width: auto;
+      display: flex;
+      justify-content: center; }
+    .dweb p {
+      width: auto;
+      padding: 0%; }
+  .dwebFlex {
+    flex-direction: row;
+    justify-content: center; } }
+
+@media screen and (max-width: 800px) {
+  .container {
+    flex-direction: column;
+    flex-flow: row wrap; }
+  .header {
+    flex-direction: column;
+    height: auto;
+    justify-content: space-around; }
+  .servicios serviciosFlex {
+    flex-direction: row;
+    justify-content: center;
+    flex-direction: column;
+    flex-flow: row wrap;
+    background-color: antiquewhite;
+    width: auto;
+    padding: auto; }
+  .servicios h2 {
+    font-weight: 800;
+    font-size: 1.5rem;
+    color: #24a3a3;
+    padding: 5% 10%;
+    width: auto;
+    display: flex;
+    justify-content: center; }
+  .servicios itemServicios {
+    font-size: 1rem;
+    width: auto;
+    height: auto;
+    justify-content: center;
+    border: solid 1px black;
+    display: flex;
+    flex-direction: column; }
+  .gDigital gDigitalDescripcion {
+    padding: 20%;
+    width: auto; }
+  .gDigital p {
+    width: auto;
+    height: auto;
+    background-color: rgba(245, 245, 220, 0.932);
+    margin: auto;
+    justify-content: center;
+    display: flex; }
+  .gDigital a {
+    font-weight: 400;
+    font-size: 1.5rem;
+    /* = 20px */
+    text-align: center;
+    color: #419160; }
+  .dweb {
+    background-color: beige;
+    width: auto;
+    height: 500px; }
+    .dweb h2 {
+      font-size: 1.5rem;
+      width: auto;
+      display: flex;
+      justify-content: center; }
+  .footer h1 h3 {
+    font-size: 10px; } }
+
+@media screen and (max-width: 285px) {
+  .nombre h2 {
+    font-weight: 800;
+    font-size: 2rem;
+    /* = 20px */
+    text-align: center;
+    padding: 10px 0; }
+  .nombre p {
+    font-weight: 200;
+    font-size: 1.3rem;
+    /* = 20px */
+    padding: 0 10px; }
+  .gDigitalDescripcion {
+    padding: 10% 10%;
+    width: auto; }
+  .gDigital {
+    background-image: url(../img/bg1_Bio.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 50px; }
+  .gDigital p {
+    justify-content: center;
+    display: flex; }
+  .gDigital a {
+    display: flex;
+    justify-content: center; }
+  .servicios h2 {
+    font-weight: 600;
+    font-size: 1.3rem;
+    color: #24a3a3;
+    padding: 5% 10%;
+    width: auto;
+    display: flex;
+    justify-content: center; }
+  .dwebFlex {
+    display: flex;
+    justify-content: stretch;
+    flex-wrap: wrap;
+    width: auto; } }
