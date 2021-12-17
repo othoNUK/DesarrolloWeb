@@ -79,14 +79,6 @@ body {
 .servicios {
   background-color: beige;
   padding: 0.5% 0.5% 7% 0.5%; }
-  .servicios h2 {
-    font-weight: 800;
-    font-size: 2rem;
-    color: #24a3a3;
-    padding: 5% 30%;
-    width: auto;
-    display: flex;
-    justify-content: center; }
   .servicios .serviciosFlex {
     display: flex;
     justify-content: center;
@@ -115,6 +107,15 @@ body {
     padding: 5% 20%;
     width: auto;
     justify-content: center; }
+
+.servicios h2, .dweb h2 {
+  display: flex;
+  font-weight: 800;
+  font-size: 2rem;
+  justify-content: center;
+  color: #24a3a3;
+  padding: 5% 0px;
+  width: auto; }
 
 .gDigital {
   background-image: url(../img/bg1_Bio.jpg);
@@ -156,14 +157,6 @@ body {
   justify-content: center;
   display: grid;
   height: 500px; }
-  .dweb h2 {
-    display: flex;
-    justify-content: center;
-    font-weight: 800;
-    font-size: 2rem;
-    color: #24a3a3;
-    padding: 5% 0px;
-    width: auto; }
   .dweb .dwebFlex {
     display: flex;
     justify-content: stretch;
@@ -307,7 +300,6 @@ body {
   .nombre h2 {
     font-weight: 800;
     font-size: 2rem;
-    /* = 20px */
     text-align: center;
     padding: 10px 0; }
   .nombre p {

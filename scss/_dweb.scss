@@ -4,13 +4,7 @@
     display: grid;
     height: 500px;
     h2 {
-        display: flex;
-        justify-content: center;
-        font-weight: 800;
-        font-size: 2rem;
-        color: #24a3a3;
-        padding: 5% 0px;
-        width: auto;
+      @extend %titulos;
     }
     .dwebFlex{
         display: flex;
