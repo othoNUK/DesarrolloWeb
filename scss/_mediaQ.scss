@@ -2,11 +2,15 @@
     .gDigitalDescripcion{
         padding: auto;
     }
+    .serviciosFlex {
+        display:flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
     .itemServicios {
         font-size: 1rem;
-        color: #131214;
-        width: 25%;
-        height: 200px;
+        width: auto;
+        height: auto;
         justify-content: center;
         display: flex;
         flex-direction: column;
@@ -48,12 +52,12 @@
             padding: 0%;
         }
     }
-
     .dwebFlex {
         flex-direction: row;
         justify-content: center;
     }
 }
+
 @media screen and (max-width:800px) {
     .container {
         flex-direction: column;
@@ -64,16 +68,21 @@
         height: auto;
         justify-content: space-around;
     }
-    .servicios{
-        serviciosFlex {
+    .servicios {
+        background-color: beige;
+        padding: 0.5% 0.5% 7% 0.5%;
+        .serviciosFlex {
+            display:flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+    }
+    .serviciosFlex {
         flex-direction: row;
         justify-content: center;
-        flex-direction: column;
         flex-flow: row wrap;
-        background-color: antiquewhite;
         width: auto;
-        padding: auto;
-        }
+        padding: auto;        
         h2 {
         font-weight: 800;
         font-size: 1.5rem;
@@ -83,21 +92,20 @@
         display: flex;
         justify-content: center;
         }
-        itemServicios {
+    }
+    .itemServicios {
             font-size: 1rem;
             width: auto;
             height: auto;
             justify-content: center;
-            border: solid 1px black;
             display: flex;
             flex-direction: column;
         }
-    }
     .gDigital{
         gDigitalDescripcion{
         padding: 20%;
         width: auto;
-    }
+        }
         p {
         width: auto;
         height: auto;
@@ -109,11 +117,10 @@
         a {
         font-weight: 400;
         font-size: 1.5rem;
-        /* = 20px */
         text-align: center;
         color: rgb(65, 145, 96);
-    }
-}    
+        }
+    }    
     .dweb {
         background-color: beige;
         width: auto;
@@ -136,11 +143,9 @@
         text-align: center;
         padding: 10px 0;
     }
-
     .nombre p {
         font-weight: 200;
         font-size: 1.3rem;
-        /* = 20px */
         padding: 0 10px;
     }
     .gDigitalDescripcion {
@@ -154,17 +159,14 @@
         background-size: cover;
         padding: 50px;
     }
-
     .gDigital p {
         justify-content: center;
         display: flex;
-    }
-
-    .gDigital a {
+        a {
         display: flex;
         justify-content: center;
+        }
     }
-
     .servicios h2 {
         font-weight: 600;
         font-size: 1.3rem;

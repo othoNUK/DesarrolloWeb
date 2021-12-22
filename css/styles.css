@@ -81,25 +81,26 @@ body {
   padding: 0.5% 0.5% 7% 0.5%; }
   .servicios .serviciosFlex {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     flex-wrap: wrap; }
-  .servicios .itemServicios {
-    font-size: 1rem;
-    color: #131214;
-    width: 30%;
-    height: 300px;
-    justify-content: center;
-    padding: 20px 20px;
-    display: flex;
-    flex-direction: column; }
-  .servicios p {
+
+.itemServicios {
+  font-size: 1rem;
+  color: #131214;
+  width: 30%;
+  height: 300px;
+  justify-content: center;
+  padding: 20px 20px;
+  display: flex;
+  flex-direction: column; }
+  .itemServicios p {
     font-size: 1.2rem;
     padding: 2em 4em;
     display: flex;
     color: #505E62;
     justify-content: center;
     text-align: center; }
-  .servicios h6 {
+  .itemServicios h6 {
     font-weight: 800;
     font-size: 2.2rem;
     color: #24a3a3;
@@ -193,11 +194,14 @@ body {
 @media screen and (max-width: 1261px) {
   .gDigitalDescripcion {
     padding: auto; }
+  .serviciosFlex {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; }
   .itemServicios {
     font-size: 1rem;
-    color: #131214;
-    width: 25%;
-    height: 200px;
+    width: auto;
+    height: auto;
     justify-content: center;
     display: flex;
     flex-direction: column; }
@@ -244,28 +248,32 @@ body {
     flex-direction: column;
     height: auto;
     justify-content: space-around; }
-  .servicios serviciosFlex {
+  .servicios {
+    background-color: beige;
+    padding: 0.5% 0.5% 7% 0.5%; }
+    .servicios .serviciosFlex {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap; }
+  .serviciosFlex {
     flex-direction: row;
     justify-content: center;
-    flex-direction: column;
     flex-flow: row wrap;
-    background-color: antiquewhite;
     width: auto;
     padding: auto; }
-  .servicios h2 {
-    font-weight: 800;
-    font-size: 1.5rem;
-    color: #24a3a3;
-    padding: 5% 10%;
-    width: auto;
-    display: flex;
-    justify-content: center; }
-  .servicios itemServicios {
+    .serviciosFlex h2 {
+      font-weight: 800;
+      font-size: 1.5rem;
+      color: #24a3a3;
+      padding: 5% 10%;
+      width: auto;
+      display: flex;
+      justify-content: center; }
+  .itemServicios {
     font-size: 1rem;
     width: auto;
     height: auto;
     justify-content: center;
-    border: solid 1px black;
     display: flex;
     flex-direction: column; }
   .gDigital gDigitalDescripcion {
@@ -281,7 +289,6 @@ body {
   .gDigital a {
     font-weight: 400;
     font-size: 1.5rem;
-    /* = 20px */
     text-align: center;
     color: #419160; }
   .dweb {
@@ -305,7 +312,6 @@ body {
   .nombre p {
     font-weight: 200;
     font-size: 1.3rem;
-    /* = 20px */
     padding: 0 10px; }
   .gDigitalDescripcion {
     padding: 10% 10%;
@@ -319,9 +325,9 @@ body {
   .gDigital p {
     justify-content: center;
     display: flex; }
-  .gDigital a {
-    display: flex;
-    justify-content: center; }
+    .gDigital p a {
+      display: flex;
+      justify-content: center; }
   .servicios h2 {
     font-weight: 600;
     font-size: 1.3rem;
