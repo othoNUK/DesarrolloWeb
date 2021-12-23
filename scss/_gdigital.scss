@@ -5,9 +5,9 @@
     background-size: cover;
     padding: 100px;
     p {
+        background-color: #cfcfcfc7;
         width: 80px;
         height: auto;
-        background-color: rgba(245, 245, 220, 0.932);
         margin: auto;
         padding: 10% 10%;
         justify-content: center;
@@ -36,7 +36,4 @@
             padding: 20px 0px;
         }
     }
-    //  h2.titulos{
-    //         @extend %titulos;
-    //     }
-    
+

@@ -1,5 +1,4 @@
 .servicios {
-    background-color: beige;
     padding: 0.5% 0.5% 7% 0.5%;
     h2 {
         @extend %titulos;
@@ -11,14 +10,7 @@
     }
 }
     .itemServicios {
-        font-size: 1rem;
-        color: #131214;
-        width: 30%;
-        height: 300px;
-        justify-content: center;
-        padding: 20px 20px;
-        display: flex;
-        flex-direction: column;
+        @extend %item;
         p {
         font-size: 1.2rem;
         padding: 2em 4em;

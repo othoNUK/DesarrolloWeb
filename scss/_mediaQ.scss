@@ -1,15 +1,22 @@
 @media screen and (max-width:1261px) {
+    .gDigital p {
+        background-color: #cfcfcfc7;
+        height: auto;
+        margin: auto;
+        padding: 10% 10%;
+        justify-content: center;
+        display: flex;
+    }
     .gDigitalDescripcion{
-        padding: auto;
+        height: 850px;
     }
     .serviciosFlex {
         display:flex;
-        justify-content: space-between;
+        justify-content: center;
         flex-wrap: wrap;
     }
     .itemServicios {
         font-size: 1rem;
-        width: auto;
         height: auto;
         justify-content: center;
         display: flex;
@@ -20,33 +27,15 @@
             justify-content: center;
         }
         h6 {
-            font-size: small;
             display: flex;
             padding: 10% 20%;
             width: auto;
             justify-content: center;
         }
     }
-    .servicios h2 {
-        font-weight: 800;
-        font-size: 1.5rem;
-        color: #24a3a3;
-        padding: 5% 20%;
-        width: auto;
-        display: flex;
-        justify-content: center;
-    }
     .dweb {
-        background-color: beige;
         padding: 5% 10%;
         width: auto;
-        h2 {
-            font-size: 1.5rem;
-            padding: 0px;
-            width: auto;
-            display: flex;
-            justify-content: center;
-        }
         p {
             width: auto;
             padding: 0%;
@@ -67,9 +56,11 @@
         flex-direction: column;
         height: auto;
         justify-content: space-around;
+        h1{
+            display: none;
+        }
     }
     .servicios {
-        background-color: beige;
         padding: 0.5% 0.5% 7% 0.5%;
         .serviciosFlex {
             display:flex;
@@ -85,31 +76,18 @@
         padding: auto;        
         h2 {
         font-weight: 800;
-        font-size: 1.5rem;
+        font-size: medium;
         color: #24a3a3;
         padding: 5% 10%;
         width: auto;
         display: flex;
         justify-content: center;
         }
-    }
-    .itemServicios {
-            font-size: 1rem;
-            width: auto;
-            height: auto;
-            justify-content: center;
-            display: flex;
-            flex-direction: column;
-        }
-    .gDigital{
-        gDigitalDescripcion{
-        padding: 20%;
-        width: auto;
-        }
+    }    
+    .gDigital{       
         p {
         width: auto;
         height: auto;
-        background-color: rgba(245, 245, 220, 0.932);
         margin: auto;
         justify-content: center;
         display: flex;
@@ -120,13 +98,16 @@
         text-align: center;
         color: rgb(65, 145, 96);
         }
-    }    
-    .dweb {
-        background-color: beige;
+    } 
+    .gDigitalDescripcion{
+        padding: 10% 20%;
         width: auto;
-        height: 500px;
+        height: 950px;
+        }   
+    .dweb {
+        width: auto;
+        height: auto;
         h2 {
-            font-size: 1.5rem;
             width: auto;
             display: flex;
             justify-content: center;
@@ -136,7 +117,7 @@
         font-size: 10px;
     }
 }
-@media screen and (max-width:285px) {
+@media screen and (max-width:400px) {
     .nombre h2 {
         font-weight: 800;
         font-size: 2rem;
@@ -151,6 +132,7 @@
     .gDigitalDescripcion {
         padding: 10% 10%;
         width: auto;
+        height: 950px;
     }
     .gDigital {
         background-image: url(../img/bg1_Bio.jpg);
@@ -167,19 +149,28 @@
         justify-content: center;
         }
     }
-    .servicios h2 {
-        font-weight: 600;
-        font-size: 1.3rem;
-        color: #24a3a3;
-        padding: 5% 10%;
+    .itemServicios {
         width: auto;
-        display: flex;
+        height: auto;
         justify-content: center;
+        display: flex;
+        flex-direction: column;
     }
+    .dweb {
+        justify-content: center;
+        display: grid;
+        height: auto;
     .dwebFlex {
         display: flex;
-        justify-content: stretch;
+        justify-content: center;
         flex-wrap: wrap;
         width: auto;
+        }
     }
+    .col{
+        height: 50px;
+    }
+    .row-cols-auto {
+        width: 0px;
+    } 
 }

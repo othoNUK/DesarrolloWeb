@@ -43,7 +43,6 @@ body {
   width: auto;
   height: 50%;
   text-align: center;
-  /*background-color: blueviolet;*/
   padding: 5%;
   border-bottom: solid 1px #546063;
   margin-bottom: 50px; }
@@ -77,12 +76,37 @@ body {
     bottom: 3px; } }
 
 .servicios {
-  background-color: beige;
   padding: 0.5% 0.5% 7% 0.5%; }
   .servicios .serviciosFlex {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap; }
+
+.itemServicios p {
+  font-size: 1.2rem;
+  padding: 2em 4em;
+  display: flex;
+  color: #505E62;
+  justify-content: center;
+  text-align: center; }
+
+.itemServicios h6 {
+  font-weight: 800;
+  font-size: 2.2rem;
+  color: #24a3a3;
+  display: flex;
+  padding: 5% 20%;
+  width: auto;
+  justify-content: center; }
+
+.servicios h2, .dweb h2, .dweb .cardweb h5 {
+  display: flex;
+  font-weight: 800;
+  font-size: 2rem;
+  justify-content: center;
+  color: #24a3a3;
+  padding: 5% 0px;
+  width: auto; }
 
 .itemServicios {
   font-size: 1rem;
@@ -93,30 +117,6 @@ body {
   padding: 20px 20px;
   display: flex;
   flex-direction: column; }
-  .itemServicios p {
-    font-size: 1.2rem;
-    padding: 2em 4em;
-    display: flex;
-    color: #505E62;
-    justify-content: center;
-    text-align: center; }
-  .itemServicios h6 {
-    font-weight: 800;
-    font-size: 2.2rem;
-    color: #24a3a3;
-    display: flex;
-    padding: 5% 20%;
-    width: auto;
-    justify-content: center; }
-
-.servicios h2, .dweb h2 {
-  display: flex;
-  font-weight: 800;
-  font-size: 2rem;
-  justify-content: center;
-  color: #24a3a3;
-  padding: 5% 0px;
-  width: auto; }
 
 .gDigital {
   background-image: url(../img/bg1_Bio.jpg);
@@ -125,9 +125,9 @@ body {
   background-size: cover;
   padding: 100px; }
   .gDigital p {
+    background-color: #cfcfcfc7;
     width: 80px;
     height: auto;
-    background-color: rgba(245, 245, 220, 0.932);
     margin: auto;
     padding: 10% 10%;
     justify-content: center;
@@ -154,22 +154,27 @@ body {
     padding: 20px 0px; }
 
 .dweb {
-  background-color: beige;
   justify-content: center;
   display: grid;
-  height: 500px; }
+  height: 500px;
+  background-color: #e1e5e9;
+  padding-bottom: 10%; }
   .dweb .dwebFlex {
     display: flex;
-    justify-content: stretch;
+    justify-content: center;
     flex-wrap: wrap;
-    width: auto;
-    height: 300px; }
+    width: auto; }
   .dweb .cardweb {
     width: 18rem;
     height: 10%;
-    text-align: center; }
+    text-align: center;
+    justify-content: center; }
     .dweb .cardweb h5 {
+      color: #7895c9;
+      font-size: 1.5rem;
       padding: 20% 0%; }
+  .dweb .card-body {
+    padding: 0px; }
 
 .footer {
   background-color: #c7c7c3;
@@ -192,15 +197,21 @@ body {
     width: 50px; }
 
 @media screen and (max-width: 1261px) {
+  .gDigital p {
+    background-color: #cfcfcfc7;
+    height: auto;
+    margin: auto;
+    padding: 10% 10%;
+    justify-content: center;
+    display: flex; }
   .gDigitalDescripcion {
-    padding: auto; }
+    height: 850px; }
   .serviciosFlex {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap; }
   .itemServicios {
     font-size: 1rem;
-    width: auto;
     height: auto;
     justify-content: center;
     display: flex;
@@ -210,29 +221,13 @@ body {
       display: flex;
       justify-content: center; }
     .itemServicios h6 {
-      font-size: small;
       display: flex;
       padding: 10% 20%;
       width: auto;
       justify-content: center; }
-  .servicios h2 {
-    font-weight: 800;
-    font-size: 1.5rem;
-    color: #24a3a3;
-    padding: 5% 20%;
-    width: auto;
-    display: flex;
-    justify-content: center; }
   .dweb {
-    background-color: beige;
     padding: 5% 10%;
     width: auto; }
-    .dweb h2 {
-      font-size: 1.5rem;
-      padding: 0px;
-      width: auto;
-      display: flex;
-      justify-content: center; }
     .dweb p {
       width: auto;
       padding: 0%; }
@@ -248,8 +243,9 @@ body {
     flex-direction: column;
     height: auto;
     justify-content: space-around; }
+    .header h1 {
+      display: none; }
   .servicios {
-    background-color: beige;
     padding: 0.5% 0.5% 7% 0.5%; }
     .servicios .serviciosFlex {
       display: flex;
@@ -263,26 +259,15 @@ body {
     padding: auto; }
     .serviciosFlex h2 {
       font-weight: 800;
-      font-size: 1.5rem;
+      font-size: medium;
       color: #24a3a3;
       padding: 5% 10%;
       width: auto;
       display: flex;
       justify-content: center; }
-  .itemServicios {
-    font-size: 1rem;
-    width: auto;
-    height: auto;
-    justify-content: center;
-    display: flex;
-    flex-direction: column; }
-  .gDigital gDigitalDescripcion {
-    padding: 20%;
-    width: auto; }
   .gDigital p {
     width: auto;
     height: auto;
-    background-color: rgba(245, 245, 220, 0.932);
     margin: auto;
     justify-content: center;
     display: flex; }
@@ -291,19 +276,21 @@ body {
     font-size: 1.5rem;
     text-align: center;
     color: #419160; }
-  .dweb {
-    background-color: beige;
+  .gDigitalDescripcion {
+    padding: 10% 20%;
     width: auto;
-    height: 500px; }
+    height: 950px; }
+  .dweb {
+    width: auto;
+    height: auto; }
     .dweb h2 {
-      font-size: 1.5rem;
       width: auto;
       display: flex;
       justify-content: center; }
   .footer h1 h3 {
     font-size: 10px; } }
 
-@media screen and (max-width: 285px) {
+@media screen and (max-width: 400px) {
   .nombre h2 {
     font-weight: 800;
     font-size: 2rem;
@@ -315,7 +302,8 @@ body {
     padding: 0 10px; }
   .gDigitalDescripcion {
     padding: 10% 10%;
-    width: auto; }
+    width: auto;
+    height: 950px; }
   .gDigital {
     background-image: url(../img/bg1_Bio.jpg);
     background-repeat: no-repeat;
@@ -328,16 +316,22 @@ body {
     .gDigital p a {
       display: flex;
       justify-content: center; }
-  .servicios h2 {
-    font-weight: 600;
-    font-size: 1.3rem;
-    color: #24a3a3;
-    padding: 5% 10%;
+  .itemServicios {
     width: auto;
+    height: auto;
+    justify-content: center;
     display: flex;
-    justify-content: center; }
-  .dwebFlex {
-    display: flex;
-    justify-content: stretch;
-    flex-wrap: wrap;
-    width: auto; } }
+    flex-direction: column; }
+  .dweb {
+    justify-content: center;
+    display: grid;
+    height: auto; }
+    .dweb .dwebFlex {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      width: auto; }
+  .col {
+    height: 50px; }
+  .row-cols-auto {
+    width: 0px; } }
