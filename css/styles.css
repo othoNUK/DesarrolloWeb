@@ -34,10 +34,6 @@ body {
     .header nav ul li {
       padding: 0px 10px;
       display: inline; }
-    .header nav ul a {
-      color: #419160; }
-    .header nav ul:hover {
-      color: #419160; }
 
 .nombre {
   width: auto;
@@ -49,7 +45,6 @@ body {
   .nombre h2 {
     font-weight: 400;
     font-size: 3rem;
-    /* = 20px */
     text-align: center;
     padding: 10px 0;
     margin: 0; }
@@ -64,13 +59,13 @@ body {
   background: rgba(223, 222, 222, 0.308);
   position: relative;
   animation-name: nombre;
-  animation-duration: 1s;
-  animation-delay: 0.5s;
+  animation-duration: 2s;
+  animation-delay: 0.3s;
   animation-fill-mode: backwards; }
 
 @keyframes nombre {
   from {
-    bottom: -300px;
+    bottom: -50px;
     background-color: rgba(102, 102, 102, 0); }
   to {
     bottom: 3px; } }
@@ -154,10 +149,10 @@ body {
     padding: 20px 0px; }
 
 .dweb {
+  background-color: #e1e5e9;
+  height: 500px;
   justify-content: center;
   display: grid;
-  height: 500px;
-  background-color: #e1e5e9;
   padding-bottom: 10%; }
   .dweb .dwebFlex {
     display: flex;
@@ -165,7 +160,7 @@ body {
     flex-wrap: wrap;
     width: auto; }
   .dweb .cardweb {
-    width: 18rem;
+    width: 30rem;
     height: 10%;
     text-align: center;
     justify-content: center; }

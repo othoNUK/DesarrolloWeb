@@ -1,8 +1,7 @@
 .dweb {
+    @include fondo (#e1e5e9, 500px);
     justify-content: center;
     display: grid;
-    height: 500px;
-    background-color: #e1e5e9;
     padding-bottom: 10%;
     h2 {
       @extend %titulos;
@@ -14,7 +13,7 @@
         width: auto;
     }
     .cardweb {
-            width: 18rem;
+            width: 30rem;
             height: 10%;
             text-align: center;
             justify-content: center;

@@ -4,14 +4,14 @@
     background: rgba(223, 222, 222, 0.308);
     position: relative;
     animation-name: nombre;
-    animation-duration: 1s;
-    animation-delay: 0.5s;
+    animation-duration: 2s;
+    animation-delay: 0.3s;
     animation-fill-mode: backwards;
 }
 
 @keyframes nombre {
     from {
-        bottom: -300px;
+        bottom: -50px;
         background-color: rgba(102, 102, 102, 0);
     }
 

@@ -1,0 +1,4 @@
+@mixin fondo($background-color, $height) {
+    background-color: $background-color;
+    height: $height;
+}
