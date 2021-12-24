@@ -285,7 +285,7 @@ body {
   .footer h1 h3 {
     font-size: 10px; } }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 500px) {
   .nombre h2 {
     font-weight: 800;
     font-size: 2rem;
