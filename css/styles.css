@@ -226,7 +226,8 @@ body {
       justify-content: center; }
   .dweb {
     padding: 5% 10%;
-    width: auto; }
+    width: auto;
+    height: auto; }
     .dweb p {
       width: auto;
       padding: 0%; }
