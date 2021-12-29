@@ -3,6 +3,7 @@
     justify-content: center;
     display: grid;
     padding-bottom: 10%;
+    height: auto;
     h2 {
       @extend %titulos;
     }
