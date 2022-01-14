@@ -1,9 +1,8 @@
 .dweb {
-    @include fondo (#e1e5e9, 500px);
+    @include fondo (#e1e5e9, auto);
     justify-content: center;
     display: grid;
     padding-bottom: 10%;
-    height: auto;
     h2 {
       @extend %titulos;
     }
