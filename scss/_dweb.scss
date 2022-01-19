@@ -4,13 +4,23 @@
     display: grid;
     padding-bottom: 10%;
     h2 {
-      @extend %titulos;
+        display: flex;
+        font-weight: 800;
+        font-size: 2rem;
+        justify-content: center;
+        color: #3f72a1;
+        padding: 5% 0px;
+        width: auto;
     }
     .dwebFlex{
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
         width: auto;
+    }  
+    .dweb i{
+        font-size: 100px;
+        color: #3f72a1;
     }
     .cardweb {
             width: 30rem;
@@ -18,13 +28,22 @@
             text-align: center;
             justify-content: center;
         h5{
-            color: rgb(120, 149, 201);
+            color: #3f72a1;
             font-size: 1.5rem;
-            padding: 20% 0%; 
+            padding: 10% 0%;
             @extend %titulos;            
         }
     }   
     .card-body{
         padding: 0px;
+        }
+    .leadDweb{
+        font-size: 1.4rem;
+        font-weight: 300;
+        padding: 10% 10%;
+    }
+    .card-img-top{
+        width: 80%;
+        padding: 5% 0px;
     }
 }

@@ -4,7 +4,7 @@
   box-sizing: border-box; }
 
 html {
-  font-size: 62.5%; }
+  font-size: 65%; }
 
 body {
   font-family: 'Roboto', sans-serif; }
@@ -25,7 +25,8 @@ body {
   display: flex;
   padding: 0.9% 0.5%;
   justify-content: space-between;
-  align-items: center; }
+  align-items: center;
+  width: 100%; }
   .header h1 {
     padding: 0 0.5%; }
   .header nav ul {
@@ -40,8 +41,7 @@ body {
   height: 50%;
   text-align: center;
   padding: 5%;
-  border-bottom: solid 1px #546063;
-  margin-bottom: 50px; }
+  border-bottom: solid 1px #546063; }
   .nombre h2 {
     font-weight: 400;
     font-size: 3rem;
@@ -78,8 +78,8 @@ body {
     flex-wrap: wrap; }
 
 .itemServicios p {
-  font-size: 1.2rem;
-  padding: 2em 4em;
+  font-size: 1.5rem;
+  padding: 2em 2em;
   display: flex;
   color: #505E62;
   justify-content: center;
@@ -94,7 +94,7 @@ body {
   width: auto;
   justify-content: center; }
 
-.servicios h2, .dweb h2, .dweb .cardweb h5 {
+.servicios h2, .dweb .cardweb h5 {
   display: flex;
   font-weight: 800;
   font-size: 2rem;
@@ -120,18 +120,18 @@ body {
   background-size: cover;
   padding: 100px; }
   .gDigital p {
-    background-color: #cfcfcfc7;
-    width: 80px;
+    background-color: #fdf9f9;
+    width: 50%;
     height: auto;
     margin: auto;
     padding: 10% 10%;
     justify-content: center;
     display: flex; }
   .gDigital a {
-    font-weight: 400;
-    font-size: 2rem;
+    font-weight: 700;
+    font-size: 3rem;
     text-align: center;
-    color: #419160; }
+    color: #d76a68; }
 
 .gDigitalDescripcion {
   font-weight: 400;
@@ -141,16 +141,51 @@ body {
   padding: 50px 100px 50px 200px;
   display: grid;
   justify-content: space-evenly;
-  width: 80%; }
+  width: 100%; }
   .gDigitalDescripcion h2 {
     font-weight: 800;
     font-size: 2rem;
-    color: #24a3a3;
+    color: #d76a68;
     padding: 20px 0px; }
 
 .lead {
   font-size: 1.4rem;
   font-weight: 300; }
+
+.contenido {
+  width: 100%;
+  padding: 10%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); }
+
+.anidado {
+  display: grid;
+  width: 100%;
+  grid-auto-rows: auto;
+  flex-direction: column;
+  column-gap: 5px; }
+  .anidado h1 {
+    color: #d76a68;
+    padding: 10%;
+    height: auto;
+    font-size: 3em;
+    border-bottom: solid 1px #d76a68; }
+  .anidado p {
+    padding: 15% 10%;
+    padding-bottom: 15%;
+    font-size: 1.5rem; }
+
+.imgCont {
+  display: grid;
+  padding: 10px;
+  justify-content: center;
+  width: auto; }
+
+.img {
+  display: grid;
+  width: 100%;
+  align-items: center;
+  height: auto; }
 
 .dweb {
   background-color: #e1e5e9;
@@ -158,27 +193,43 @@ body {
   justify-content: center;
   display: grid;
   padding-bottom: 10%; }
+  .dweb h2 {
+    display: flex;
+    font-weight: 800;
+    font-size: 2rem;
+    justify-content: center;
+    color: #3f72a1;
+    padding: 5% 0px;
+    width: auto; }
   .dweb .dwebFlex {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     width: auto; }
+  .dweb .dweb i {
+    font-size: 100px;
+    color: #3f72a1; }
   .dweb .cardweb {
     width: 30rem;
     height: 10%;
     text-align: center;
     justify-content: center; }
     .dweb .cardweb h5 {
-      color: #7895c9;
+      color: #3f72a1;
       font-size: 1.5rem;
-      padding: 20% 0%; }
+      padding: 10% 0%; }
   .dweb .card-body {
     padding: 0px; }
+  .dweb .leadDweb {
+    font-size: 1.4rem;
+    font-weight: 300;
+    padding: 10% 10%; }
+  .dweb .card-img-top {
+    width: 80%;
+    padding: 5% 0px; }
 
 .footer {
   background-color: #c7c7c3;
-  display: -moz-grid-line;
-  grid-template-columns: 50% 50%;
   padding: 10px 10px; }
   .footer h1 {
     font-weight: 400;
@@ -195,9 +246,12 @@ body {
     font-size: 15px;
     width: 50px; }
 
+.col-6 {
+  padding: 0px 15%; }
+
 @media screen and (max-width: 1261px) {
   .gDigital p {
-    background-color: #cfcfcfe8;
+    background-color: #f5f1f1;
     height: auto;
     margin: auto;
     padding: 10% 10%;
@@ -272,14 +326,40 @@ body {
     justify-content: center;
     display: flex; }
   .gDigital a {
-    font-weight: 400;
-    font-size: 1.5rem;
+    font-weight: 700;
+    font-size: 3rem;
     text-align: center;
-    color: #419160; }
+    color: #d76a68; }
   .gDigitalDescripcion {
     padding: 10% 20%;
     width: auto;
     height: 950px; }
+  .contenido {
+    width: 100%;
+    padding: 10%;
+    display: grid;
+    grid-template-columns: 1fr; }
+  .imgCont {
+    display: grid;
+    padding: 10px;
+    justify-content: center;
+    width: 100%; }
+  .anidado {
+    display: grid;
+    width: 100%;
+    grid-auto-rows: auto;
+    flex-direction: column;
+    column-gap: 5px; }
+    .anidado h1 {
+      color: #d76a68;
+      padding: 10%;
+      height: auto;
+      font-size: 2em;
+      border-bottom: solid 1px #d76a68; }
+    .anidado p {
+      padding: 15% 10%;
+      padding-bottom: 15%;
+      font-size: 1.4rem; }
   .dweb {
     width: auto;
     height: auto; }
@@ -287,8 +367,15 @@ body {
       width: auto;
       display: flex;
       justify-content: center; }
+  .dweb .card-img-top {
+    width: 50%;
+    padding: 5% 0px; }
   .footer h1 h3 {
-    font-size: 10px; } }
+    font-size: 10px; }
+  .col-6 {
+    flex: 0 0 auto;
+    width: auto;
+    padding: 0px 10%; } }
 
 @media screen and (max-width: 500px) {
   .nombre h2 {
@@ -314,6 +401,10 @@ body {
     justify-content: center;
     display: flex; }
     .gDigital p a {
+      font-weight: 700;
+      font-size: 2rem;
+      text-align: center;
+      color: #d76a68;
       display: flex;
       justify-content: center; }
   .itemServicios {
@@ -333,5 +424,8 @@ body {
       width: auto; }
   .col {
     height: 50px; }
-  .row-cols-auto {
-    width: 0px; } }
+  .col-6 {
+    width: auto; }
+  .dweb .card-img-top {
+    width: 30%;
+    padding: 5% 0px; } }
