@@ -171,9 +171,8 @@ body {
     font-size: 3em;
     border-bottom: solid 1px #d76a68; }
   .anidado p {
-    padding: 15% 10%;
-    padding-bottom: 15%;
-    font-size: 1.5rem; }
+    padding: 5%;
+    font-size: 1.4rem; }
 
 .imgCont {
   display: grid;
@@ -357,8 +356,7 @@ body {
       font-size: 2em;
       border-bottom: solid 1px #d76a68; }
     .anidado p {
-      padding: 15% 10%;
-      padding-bottom: 15%;
+      padding: auto;
       font-size: 1.4rem; }
   .dweb {
     width: auto;
