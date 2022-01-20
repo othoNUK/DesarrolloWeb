@@ -171,7 +171,7 @@ body {
     font-size: 3em;
     border-bottom: solid 1px #d76a68; }
   .anidado p {
-    padding: 5%;
+    padding: auto;
     font-size: 1.4rem; }
 
 .imgCont {
@@ -229,7 +229,8 @@ body {
 
 .footer {
   background-color: #c7c7c3;
-  padding: 10px 10px; }
+  padding: 10px 10px;
+  display: grid; }
   .footer h1 {
     font-weight: 400;
     font-size: 2rem;
@@ -243,7 +244,7 @@ body {
   .footer i {
     color: #616363;
     font-size: 15px;
-    width: 50px; }
+    width: 50%; }
 
 .col-6 {
   padding: 0px 15%; }

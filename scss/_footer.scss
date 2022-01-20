@@ -1,6 +1,7 @@
 .footer {
     background-color: rgb(199, 199, 195);
-    padding: 10px 10px;    
+    padding: 10px 10px;  
+    display: grid;  
     h1{
         font-weight: 400;
         font-size: 2rem;
@@ -16,10 +17,10 @@
     i {
         color: #616363;
         font-size: 15px;
-        width: 50px;
+        width: 50%;
     }
     
 }
 .col-6{
     padding: 0px 15%;
-    }
+}
